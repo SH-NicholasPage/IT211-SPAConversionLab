@@ -1,22 +1,3 @@
-/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-
-@font-face
-{
-    font-family: "Righteous";
-    src: url("../fonts/BalooChettan-Regular.ttf");
-    src: url("../fonts/BalooChettan-Regular.ttf");
-}
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(icomoon.css);
-@import url(jquery-ui.css);
-
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
-
 *
 {
     box-sizing: border-box !important;
@@ -35,7 +16,7 @@ body
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
 }
 
 a
@@ -67,8 +48,8 @@ ul,
 li,
 ol
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -110,6 +91,14 @@ img
     outline: 0;
 }
 
+hr
+{
+    background-color: #7f9db0;
+    height: 1px;
+    width: 650px;
+    margin-top: 32px;
+}
+
 .paddind_bottom_0
 {
     padding-bottom: 0 !important;
@@ -135,12 +124,12 @@ button
 .layout_padding
 {
     padding-top: 90px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .padding_0
 {
-    padding: 0px;
+    padding: 0;
 }
 
 .header_section
@@ -188,7 +177,7 @@ button
 
 .navbar
 {
-    padding: 0px 25px 30px 25px;
+    padding: 0 25px 30px 25px;
 }
 
 .search_icon
@@ -254,7 +243,7 @@ button
     float: left;
     font-size: 16px;
     color: #ffffff;
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 5px;
     text-align: center;
 }
@@ -280,7 +269,7 @@ button
     background-color: #003c61;
 }
 
-#my_slider a.carousel-control-prev
+#my_slider button.carousel-control-prev
 {
     position: absolute;
     left: 585px;
@@ -309,7 +298,7 @@ button
     color: #fff;
 }
 
-#my_slider a.carousel-control-next
+#my_slider button.carousel-control-next
 {
     position: absolute;
     left: 660px;
@@ -366,7 +355,7 @@ button
 .sign-up-text
 {
     font-size: 16px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .click_bt
@@ -384,7 +373,7 @@ button
     font-size: 16px;
     color: #ffffff;
     background-color: #003c61;
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 10px;
     margin-top: 30px;
 }
@@ -412,7 +401,7 @@ button
     background-color: #b7b7b7;
     border-radius: 5px;
     text-align: center;
-    padding: 70px 0px;
+    padding: 70px 0;
     margin-top: 30px;
 }
 
@@ -467,7 +456,7 @@ button
     font-size: 16px;
     color: #ffffff;
     background-color: #003c61;
-    padding: 10px 0px;
+    padding: 10px 0;
     border-radius: 5px;
     text-align: center;
 }
@@ -504,7 +493,7 @@ button
     color: #1e1e1e;
     font-size: 16px;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .amet-text-spec
@@ -535,15 +524,7 @@ button
     width: 17%;
     color: #4c4c4e;
     font-size: 20px;
-    margin-left: 0px;
-}
-
-.border_0
-{
-    background-color: #7f9db0;
-    height: 1px;
-    width: 650px;
-    margin-top: 32px;
+    margin-left: 0;
 }
 
 .about_section
@@ -564,7 +545,7 @@ button
     width: 80%;
     float: left;
     background-color: #eeeee6;
-    padding: 18px 20px 0px 20px;
+    padding: 18px 20px 0 20px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     margin-top: 35px;
@@ -572,10 +553,7 @@ button
 
 .border_left_0
 {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0pc;
+    border-radius: 0 8px 8px 0;
     margin-top: 60px;
 }
 
@@ -600,7 +578,7 @@ button
     float: left;
     font-size: 16px;
     color: #000;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .heading_text_1
@@ -619,7 +597,7 @@ button
     float: left;
     font-size: 16px;
     color: #000;
-    margin-left: 0px;
+    margin-left: 0;
     text-align: right;
 }
 
@@ -645,8 +623,8 @@ button
     background-color: #ff5333;
     height: 8px;
     width: 250px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -661,11 +639,11 @@ button
     font-size: 16px;
     text-align: center;
     color: #0c0c0c;
-    margin-left: 0px;
+    margin-left: 0;
     padding-top: 30px;
 }
 
-#main_slider a.carousel-control-prev
+#main_slider button.carousel-control-prev
 {
     position: absolute;
     left: -80px;
@@ -694,7 +672,7 @@ button
     color: #fff;
 }
 
-#main_slider a.carousel-control-next
+#main_slider button.carousel-control-next
 {
     position: absolute;
     right: -80px;
@@ -728,9 +706,9 @@ button
     font-size: 18px;
     color: #666666;
     background-color: transparent !important;
+    border: 0;
     border-bottom: 1px solid #050000 !important;
     padding-right: 20px;
-    border: 0px;
     padding-top: 20px;
 }
 
@@ -746,9 +724,9 @@ input.mail_text::placeholder
     font-size: 18px;
     color: #666666;
     background-color: transparent !important;
-    border-bottom: 1px solid #050000 !important;
     padding-right: 20px;
-    border: 0px;
+    border: 0;
+    border-bottom: 1px solid #050000 !important;
     height: 70px;
     padding-top: 30px;
 }
@@ -774,7 +752,7 @@ textarea#comment::placeholder
     color: #ffffff;
     text-align: center;
     background-color: #ff5333;
-    padding: 10px 0px;
+    padding: 10px 0;
     text-transform: uppercase;
     border-radius: 30px;
 }
@@ -801,7 +779,7 @@ textarea#comment::placeholder
     font-size: 20px;
     color: #f7f7f7;
     font-weight: bold;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
 }
 
 .icon
@@ -810,7 +788,7 @@ textarea#comment::placeholder
     float: left;
     font-size: 16px;
     color: #f7f7f7;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -825,7 +803,7 @@ textarea#comment::placeholder
     width: 90%;
     color: #f7f7f7;
     font-size: 16px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .Enter_text
@@ -866,8 +844,8 @@ textarea#comment::placeholder
 
 .social_icon ul
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .social_icon li
@@ -890,7 +868,7 @@ textarea#comment::placeholder
     width: 100%;
     float: left;
     font-size: 16px;
-    margin-left: 0px;
+    margin-left: 0;
     color: #fff;
     text-align: center;
 }
@@ -908,4 +886,12 @@ textarea#comment::placeholder
 .margin_top0
 {
     margin-top: 90px;
+}
+
+#btn-back-to-top
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
